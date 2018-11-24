@@ -1,6 +1,8 @@
 package create.builder;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class AmericanVehicleBuilder implements VehicleBuilder {
@@ -12,17 +14,21 @@ public class AmericanVehicleBuilder implements VehicleBuilder {
 
     @Override
     public Vehicle build() {
-        return new Vehicle(size, new ArrayList<>(wheelList));
+        ArrayList<Wheel> list  = new ArrayList<Wheel>(wheelList);
+        List<Wheel> wheel  = Collections.unmodifiableList(list);
+        return new Vehicle(size, wheel);
     }
 
     @Override
-    public void addWheel() {
+    public VehicleBuilder addWheel() {
         wheelList.add(new Wheel(23));
+        return this;
 
     }
 
     @Override
-    public void setTank(int size) {
+    public VehicleBuilder setTank(int size) {
         this.size = size * 2;
+        return this;
     }
 }
