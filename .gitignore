@@ -9,7 +9,7 @@ out
 gen
 .gitignore
 .idea/workspace.xml
-src/main/java/create/abstractFactory/
+src/main/java/creational/abstractFactory/
 src/main/resources/
 src/test/
 target/

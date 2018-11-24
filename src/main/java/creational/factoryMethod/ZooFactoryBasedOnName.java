@@ -1,4 +1,4 @@
-package create.factoryMethod;
+package creational.factoryMethod;
 
 public class ZooFactoryBasedOnName implements ZooFactory {
 

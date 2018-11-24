@@ -1,4 +1,4 @@
-package create.prototype;
+package creational.prototype;
 
 public class Computer {
 

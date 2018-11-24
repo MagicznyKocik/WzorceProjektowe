@@ -1,4 +1,4 @@
-package create.factoryMethod;
+package creational.factoryMethod;
 
 public class Cat implements Animal {
 

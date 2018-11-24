@@ -1,4 +1,4 @@
-package create.builder;
+package creational.builder;
 
 public class Wheel {
 
