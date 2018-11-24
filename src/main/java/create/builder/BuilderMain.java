@@ -11,7 +11,7 @@ public class BuilderMain {
         System.out.println(vehicle);
         builder.addWheel();
         System.out.println(vehicle);
-        vehicle.getWheel().add(new Wheel(25));
+//        vehicle.getWheel().add(new Wheel(25));
         System.out.println(vehicle);
         Vehicle vehicle2 = builder.build();
         System.out.println(vehicle2);
